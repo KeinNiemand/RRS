@@ -1,0 +1,44 @@
+[*]-More Types of Enemys
+	[x]-Slower/Faster Enemys
+	[x]-More Hp/Less Hp Enemys
+	[x]-Diffrent Movment Patterns for enemys
+	[x]-Shooting Enemys
+	[]-Bossses
+	[]-Combinations of the Above
+	[]-Even More Complex Movment Patterns
+[*]-Powerups
+	[x]-Damge to all enemys on screen
+	[x]-Shoot faster
+	[x]-Tripple shoot
+	[x]-Extra Lives
+	[x]-Permanet Upgrades
+	[x]-Bonus Points (More then ohter PowerUps)
+	[]-Point multiplier (Poits you get get multiplied for a short time)
+	[]-Shields
+[]-Better Enemy Spawn (Waves?)
+[x]-Sound
+[x]-Music
+[x]-Diffrent ways of making the game harder over time
+	[X]-Unlockeble Stronger Enemy Types
+	[x]-Diffrent Spawns per Second
+		[?]-Minimum Score
+		[X]-Sqrt of Score
+		[X]-Max Spawns per Second
+[x]-Main Menu
+[]-Game Over Screen
+[X]-High Score
+	[X]-Save High Score
+[x]-More Levels (Harder/Easyer Levels)
+[x]-Options Menu
+	[x]-Music on/off
+	[x]-Sound on/off
+	[x]-Save Options
+[x]-White GUI text
+[?]-GUI that scales with DPI
+[x]-Reduce Player Acceleration to increase controll acuracy
+[x]-Better Exlosion Animation
+[x]-Powerups that drop from enemys intead of just Spawning
+[x]-New Music
+[x]-Menu Button Sound
+[]-Send Events and screens to Google Analytics
+[]-Create Emty Website for RRS - Retro Rocket Shooter so Google Analytics is Happy
