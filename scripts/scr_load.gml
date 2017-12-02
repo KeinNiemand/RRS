@@ -11,6 +11,6 @@ for (var i=array_length_1d(highscore)-1; i>=0; i--) {
     music = ini_read_real("options", "music", 1);
 //Close Save File
 //Other
-enableAds = real(base64_decode(ini_read_string("other", base64_decode("enableAds"), base64_encode("1"))));
+enableAds = real(base64_decode(ini_read_string("other", base64_decode("enableAds"), base64_encode("0"))));
 ad = ini_read_real("other", "ad", 0);
 ini_close();

@@ -34,7 +34,7 @@ music = true;
 sound = true;
 volume = 1;
 ad = 0;
-enableAds = true;
+enableAds = false;
 </string>
           </argument>
         </arguments>
