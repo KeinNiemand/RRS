@@ -37,7 +37,7 @@ sps = 0;
 //SPS when Reaching center of screen
 activeSPS = 0.6;
 baseSpeed = 1;
-var center = (player.y+sprite_get_height(spr_player)/2+sprite_height/2)/2
+var center = (obj_player.y+sprite_get_height(spr_player)/2+sprite_height/2)/2
 stop = center+scr_irandomRange(-100,100)
 </string>
           </argument>
