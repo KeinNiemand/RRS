@@ -56,7 +56,10 @@ powerupProbability = 1.4;
 var lastBullet = instance_create(x,y+sprite_height/2,obj_bullet_evil);
 with (lastBullet) {
     creatorObject = other.object_index;
+    motion_add(other.direction,other.speed/6);
+    speed = baseSpeed;
 }
+
 //Add Shoot Sound effect code for monster here
 //var snd = audio_play_sound(snd_sfx_laser, 10, 0);
 //audio_sound_gain(snd, 0.25,0);

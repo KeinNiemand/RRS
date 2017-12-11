@@ -58,7 +58,8 @@ killedBy = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>attackmul = 1;
+            <string>//Reset attackmul and spsmul
+attackmul = 1;
 spsmul = 1;
 </string>
           </argument>
@@ -82,7 +83,7 @@ spsmul = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Turn of all tempory PowerUps
+            <string>///Turn off tripleshot
 tripleshot = false;
 </string>
           </argument>
@@ -107,14 +108,23 @@ tripleshot = false;
           <argument>
             <kind>1</kind>
             <string>///Shoot
-instance_create(x,y-sprite_height/2,obj_bullet);
+lastshoot[0] = instance_create(x,y-sprite_height/2,obj_bullet);
 if (tripleshot) {
-    var shoot1 = instance_create(x,y-sprite_height/2,obj_bullet);
-    var shoot2 = instance_create(x,y-sprite_height/2,obj_bullet);
-    shoot1.direction = 100;
-    shoot2.direction = 80;
+    lastshoot[1] = instance_create(x,y-sprite_height/2,obj_bullet);
+    lastshoot[2] = instance_create(x,y-sprite_height/2,obj_bullet);
+    lastshoot[1].direction = 100;
+    lastshoot[2].direction = 80;
+    var shoots = 3;
+} else {
+shoots = 1
 }
-with (obj_bullet) attack = other.attack*other.attackmul;
+for (i=0;i&lt;shoots; i++) {
+    with (lastshoot[i]) {
+        attack = other.attack*other.attackmul;
+        motion_add(other.direction,other.speed/6);
+        speed = baseSpeed;
+    }
+}
 if (obj_storage.sound) {
     var snd = audio_play_sound(snd_sfx_laser, 10, 0);
     audio_sound_gain(snd, 0.25,0);

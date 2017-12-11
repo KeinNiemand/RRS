@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>event_inherited();
 points = 5;
-attackmul = 1;
+attackmul = 0.5;
 spsmul = 1;
 duration = 7.5;
 vspeed = 5;

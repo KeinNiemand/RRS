@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 6;
+            <string>baseSpeed = 6
+speed = 6;
 direction = 270;
 image_speed = 6/room_speed;
 image_xscale = 1.6;
