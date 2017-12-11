@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>vspeed = 5;
-sps = 0.15;
+sps = 0.1;
 attack = 0;
 points = 5;
 </string>
