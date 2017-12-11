@@ -121,8 +121,6 @@ shoots = 1
 for (i=0;i&lt;shoots; i++) {
     with (lastshoot[i]) {
         attack = other.attack*other.attackmul;
-        motion_add(other.direction,other.speed/6);
-        speed = baseSpeed;
     }
 }
 if (obj_storage.sound) {
