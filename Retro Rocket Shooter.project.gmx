@@ -20,13 +20,15 @@
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_bullet</sprite>
-    <sprite>sprites\spr_bullet_evil</sprite>
-    <sprite>sprites\spr_monster</sprite>
-    <sprite>sprites\spr_monster_shooting</sprite>
-    <sprite>sprites\spr_enemy_shooter</sprite>
-    <sprite>sprites\spr_monster_moving</sprite>
-    <sprite>sprites\spr_monster_strong</sprite>
-    <sprite>sprites\spr_monster_fast</sprite>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_monster</sprite>
+      <sprite>sprites\spr_monster_shooting</sprite>
+      <sprite>sprites\spr_enemy_shooter</sprite>
+      <sprite>sprites\spr_monster_moving</sprite>
+      <sprite>sprites\spr_monster_strong</sprite>
+      <sprite>sprites\spr_monster_fast</sprite>
+      <sprite>sprites\spr_bullet_evil</sprite>
+    </sprites>
     <sprite>sprites\spr_powerup_bomb</sprite>
     <sprite>sprites\spr_powerup_heart</sprite>
     <sprite>sprites\spr_powerup_upgrade</sprite>
@@ -70,7 +72,7 @@
       <script>scripts\scr_Death.gml</script>
       <script>scripts\scr_playerLosseLives.gml</script>
     </scripts>
-    <scripts name="Untility">
+    <scripts name="Utility">
       <script>scripts\scr_irandomRange.gml</script>
     </scripts>
   </scripts>
@@ -85,13 +87,15 @@
     <object>objects\obj_pause</object>
     <object>objects\obj_player</object>
     <object>objects\obj_bullet</object>
-    <object>objects\obj_monster</object>
-    <object>objects\obj_monster_fast</object>
-    <object>objects\obj_monster_strong</object>
-    <object>objects\obj_monster_moving</object>
-    <object>objects\obj_monster_shooting</object>
-    <object>objects\obj_enemy_shooter</object>
-    <object>objects\obj_bullet_evil</object>
+    <objects name="enemy">
+      <object>objects\obj_monster_fast</object>
+      <object>objects\obj_monster</object>
+      <object>objects\obj_monster_strong</object>
+      <object>objects\obj_monster_shooting</object>
+      <object>objects\obj_monster_moving</object>
+      <object>objects\obj_enemy_shooter</object>
+      <object>objects\obj_bullet_evil</object>
+    </objects>
     <object>objects\obj_powerup_bomb</object>
     <object>objects\obj_powerup_heart</object>
     <object>objects\obj_powerup_upgrade</object>
