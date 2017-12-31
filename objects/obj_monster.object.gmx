@@ -25,12 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1.6;
-image_yscale = 1.6;
-if (global.device == 1) {
-    image_xscale = 1.8;
-    image_yscale = 1.8;
-}
+            <string>image_xscale = 2;
+image_yscale = 2;
 hp = 2;
 vspeed = 1;
 baseSpeed = 1;
