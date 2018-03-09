@@ -86,22 +86,44 @@ if (position_meeting(mouse_x, mouse_y, id)) {
         audio_play_sound(sound,0,false);
     switch action {
         //Button Actions 0=No Action or Diffrent Button Objects
+        //Case 1 Reset The Save
         case 1:
-                //Send Reset Event to Google Analytics
-                if (os_type == os_android) GoogleAnalytics_SendEvent("options", "reset-save");
-                //Delete Save Game
-                with(obj_storage) {
-                    for (var i=array_length_1d(highscore)-1; i&gt;=0; i--) {
-                        highscore[i] = 0;
-                    }
-                    volume = 1;
-                    sound = 1;
-                    music = 1;
-                scr_save();
-                game_restart();
-                }
+        msg = show_question_async("Bist du dir sicher das du deinen Spielstand löschen möchtest?");
         break
     }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="63">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if action == 1 {
+    var i_d, stat;
+    i_d = ds_map_find_value(async_load, "id");
+    if i_d == msg
+       {
+       if ds_map_find_value(async_load, "status")
+          {
+          scr_reset();
+          }
+       }
 }
 </string>
           </argument>

@@ -67,6 +67,7 @@
       <script>scripts\scr_playPowerupSound.gml</script>
       <script>scripts\scr_checkboxEffects.gml</script>
       <script>scripts\scr_hpdisplay.gml</script>
+      <script>scripts\scr_reset.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\scr_Death.gml</script>
