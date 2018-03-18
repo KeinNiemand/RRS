@@ -1,23 +1,18 @@
-//Toggle paused variable
-paused = !paused;
-//Pause Game
-if paused {
+//mode decides if the script should pause or unpause the game
+//so scr_pause(true) pauses the game and scr_pause(false) unpauses the game
+//Pausing deactivates all object exeot obj_storage and the object calling scr_pause
+var mode = argument0;
+if mode {
+    //Pause Game
     spr_lastScreen = sprite_create_from_surface(application_surface, 0, 0, room_width, room_height, false, false, 0, 0);
     instance_deactivate_all(true); 
     instance_activate_object(obj_storage);
-    var backButton = instance_create(room_width/2, room_height/2+100, obj_backToMenu);
-    with (backButton) {
-    image_xscale = 5;
-    image_yscale = 5;
-    }
-}
-//Unpause Game
+} //Unpause Game
 else {
     instance_activate_all();
     if sprite_exists(spr_lastScreen)
     {
     sprite_delete(spr_lastScreen);
     }
-    if instance_exists(obj_backToMenu)
-        instance_destroy(obj_backToMenu);
 }
+

@@ -5,7 +5,6 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\GooglePlayServicesExtension</extension>
-    <extension index="1">extensions\FlurryAnalyticsExt</extension>
     <extension index="2">extensions\GoogleAnalyticsExt</extension>
   </NewExtensions>
   <sounds name="sound">
