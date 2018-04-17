@@ -85,6 +85,7 @@
     <object>objects\obj_storage</object>
     <object>objects\obj_controll</object>
     <object>objects\obj_pause</object>
+    <object>objects\obj_gameOver</object>
     <object>objects\obj_player</object>
     <object>objects\obj_bullet</object>
     <objects name="enemy">

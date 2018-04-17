@@ -92,6 +92,7 @@ player = obj_player;
 if (y&gt;=player.y+sprite_get_height(spr_player)/2+sprite_height/2){
     scr_playerLosseLives(2);
     instance_destroy();
+    exit;
 }
 
 //Destry When Dead/Play Death Animation

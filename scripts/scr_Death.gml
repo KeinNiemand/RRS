@@ -9,5 +9,5 @@ if (obj_storage.ad % 3 == 0) {
         GoogleMobileAds_LoadInterstitial();
     }
 }
-//Go Back to main Menu
-scr_gotoRoom(rm_menu_main);
+//SpawnGameOver Object
+instance_create(0,0,obj_gameOver);
