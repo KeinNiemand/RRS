@@ -25,10 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>var xscale = image_xscale;
+event_inherited();
 if (global.device == 0 &amp;&amp; instance_exists(obj_controll)) instance_destroy();
 text = "";
 sound = snd_sfx_back;
+image_xscale = xscale;
 </string>
           </argument>
         </arguments>

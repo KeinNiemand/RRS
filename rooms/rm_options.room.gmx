@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>-1</persistent>
-  <colour>12632256</colour>
+  <colour>12751933</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -55,7 +55,7 @@
     <instance objName="obj_menu_checkbox" x="176" y="80" name="inst_1AF9A7E6" locked="0" code="text = &quot;Music&quot;;&#xA;effect = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_checkbox" x="176" y="112" name="inst_40A738AD" locked="0" code="text = &quot;Sound&quot;;&#xA;effect = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_slidebar" x="96" y="160" name="inst_DBD872DE" locked="0" code="text = &quot;Volume : &quot; + string(obj_storage.volume*100) + &quot;%&quot;&#xA;valueMin = 0.01;&#xA;valueMax = 1.2;&#xA;effect = 1;&#xA;" scaleX="2" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_button" x="128" y="272" name="inst_D4B5C7CA" locked="0" code="text = &quot;RESET!&quot;;&#xA;action = 1;&#xA;" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu_button" x="112" y="272" name="inst_D4B5C7CA" locked="0" code="text = &quot;RESET!&quot;;&#xA;action = 1;&#xA;" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
