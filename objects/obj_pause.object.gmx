@@ -33,6 +33,8 @@ text = "Paused";
 color = c_gray;
 //Alpha of the box drawn over the screen
 alpha = 0.3;
+//Text size
+textScale = 2;
 </string>
           </argument>
         </arguments>
@@ -65,9 +67,8 @@ draw_set_alpha(1);
 //Set setting for font
 draw_set_font(fnt_large);
 draw_set_halign(fa_middle);
-draw_set_valign(fa_center);
 draw_set_color(c_white);
-draw_text_transformed(room_width/2,room_height/2, text, 2,2,0);
+draw_text_transformed(room_width/2,0, text, textScale,textScale,0);
 //Restet draw settings to defaults
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);

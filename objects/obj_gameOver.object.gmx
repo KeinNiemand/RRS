@@ -38,6 +38,8 @@ color=c_black;
 alpha=1;
 //set draw text
 text="Game Over"
+//Set Text Size
+textScale = 1.5;
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,7 @@
 action = 0;
 pressed = false;
 sound = snd_sfx_menu;
+onclick = -1;
 </string>
           </argument>
         </arguments>
@@ -85,10 +86,15 @@ if (position_meeting(mouse_x, mouse_y, id)) {
     if (obj_storage.sound)
         audio_play_sound(sound,0,false);
     switch action {
-        //Button Actions 0=No Action or Diffrent Button Objects
+        //Button Actions 
+        //Case 0=Run script in onclick or diffrent butoon object
+        case 0:
+            if script_exists(onclick)
+                script_execute(onclick);
+        break
         //Case 1 Reset The Save
         case 1:
-        msg = show_question_async("Bist du dir sicher das du deinen Spielstand löschen möchtest?");
+            msg = show_question_async("Bist du dir sicher das du deinen Spielstand löschen möchtest?");
         break
     }
 }
