@@ -154,7 +154,7 @@ gameTime += 1/room_speed;
 scr_setGUI();
 draw_set_halign(fa_middle);
 if (os_browser == browser_not_a_browser) {
-    draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), 2, 2, 0);    
+    draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), 1.5, 1.5, 0);    
 } else
     draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), 1, 1, 0);
 draw_set_halign(fa_left);

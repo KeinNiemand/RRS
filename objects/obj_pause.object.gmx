@@ -67,7 +67,7 @@ draw_set_font(fnt_large);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_center);
 draw_set_color(c_white);
-draw_text_transformed(room_width/2,room_height/2, text, 3,3,0);
+draw_text_transformed(room_width/2,room_height/2, text, 2,2,0);
 //Restet draw settings to defaults
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
