@@ -51,13 +51,15 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_registerEnemys.gml</script>
-    <script>scripts\scr_registerPowerups.gml</script>
-    <scripts name="System">
+    <scripts name="init">
+      <script>scripts\scr_initAds.gml</script>
+      <script>scripts\scr_registerEnemys.gml</script>
+      <script>scripts\scr_registerPowerups.gml</script>
+      <script>scripts\scr_windowSize.gml</script>
+    </scripts>
+    <scripts name="Misc">
       <script>scripts\scr_gotoRoom.gml</script>
       <script>scripts\scr_pause.gml</script>
-      <script>scripts\scr_windowSize.gml</script>
-      <script>scripts\scr_initAds.gml</script>
       <script>scripts\scr_setGUI.gml</script>
       <script>scripts\scr_postionAds.gml</script>
       <script>scripts\scr_cleanPause.gml</script>
