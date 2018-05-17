@@ -10,8 +10,5 @@ if mode {
 } //Unpause Game
 else {
     instance_activate_all();
-    if sprite_exists(spr_lastScreen)
-    {
-    sprite_delete(spr_lastScreen);
-    }
+    scr_cleanPause();
 }

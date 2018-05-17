@@ -51,8 +51,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_load.gml</script>
-    <script>scripts\scr_save.gml</script>
     <script>scripts\scr_registerEnemys.gml</script>
     <script>scripts\scr_registerPowerups.gml</script>
     <scripts name="System">
@@ -62,12 +60,8 @@
       <script>scripts\scr_initAds.gml</script>
       <script>scripts\scr_setGUI.gml</script>
       <script>scripts\scr_postionAds.gml</script>
-    </scripts>
-    <scripts name="Misc Game">
+      <script>scripts\scr_cleanPause.gml</script>
       <script>scripts\scr_playPowerupSound.gml</script>
-      <script>scripts\scr_checkboxEffects.gml</script>
-      <script>scripts\scr_hpdisplay.gml</script>
-      <script>scripts\scr_reset.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\scr_Death.gml</script>
@@ -75,6 +69,15 @@
     </scripts>
     <scripts name="Utility">
       <script>scripts\scr_irandomRange.gml</script>
+    </scripts>
+    <scripts name="UI">
+      <script>scripts\scr_checkboxEffects.gml</script>
+      <script>scripts\scr_hpdisplay.gml</script>
+    </scripts>
+    <scripts name="save">
+      <script>scripts\scr_save.gml</script>
+      <script>scripts\scr_reset.gml</script>
+      <script>scripts\scr_load.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
