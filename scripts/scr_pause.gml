@@ -15,4 +15,3 @@ else {
     sprite_delete(spr_lastScreen);
     }
 }
-
