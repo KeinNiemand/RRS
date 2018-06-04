@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Init
 vspeed = 5;
-hearts = 1;
+hearts = 2;
 points = 5;
 </string>
           </argument>
