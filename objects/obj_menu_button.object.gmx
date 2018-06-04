@@ -3,7 +3,7 @@
   <spriteName>spr_menu_button</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,7 +29,7 @@
 action = 0;
 pressed = false;
 sound = snd_sfx_menu;
-onclick = -1;
+onClick = -1;
 image_xscale = 100;
 </string>
           </argument>
@@ -90,8 +90,8 @@ if (position_meeting(mouse_x, mouse_y, id)) {
         //Button Actions 
         //Case 0=Run script in onclick or diffrent butoon object
         case 0:
-            if script_exists(onclick)
-                script_execute(onclick);
+            if script_exists(onClick)
+                event_user(0);
         break
         //Case 1 Reset The Save
         case 1:
@@ -132,6 +132,30 @@ if (position_meeting(mouse_x, mouse_y, id)) {
           }
        }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///execute onclick
+script_execute(onclick);
 </string>
           </argument>
         </arguments>

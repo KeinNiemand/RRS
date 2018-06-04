@@ -103,12 +103,6 @@
       <object>objects\obj_enemy_shooter</object>
       <object>objects\obj_bullet_evil</object>
     </objects>
-    <object>objects\obj_powerup_bomb</object>
-    <object>objects\obj_powerup_heart</object>
-    <object>objects\obj_powerup_upgrade</object>
-    <object>objects\obj_powerup_tripleshot</object>
-    <object>objects\obj_powerup_bonus</object>
-    <object>objects\obj_powerup_boost</object>
     <objects name="menu">
       <object>objects\obj_play_easy</object>
       <object>objects\obj_play_normal</object>
@@ -121,6 +115,15 @@
       <object>objects\obj_menu_slidebar</object>
       <object>objects\obj_backToMenu</object>
       <object>objects\obj_title</object>
+      <object>objects\obj_changeRoom</object>
+    </objects>
+    <objects name="Powerups">
+      <object>objects\obj_powerup_bomb</object>
+      <object>objects\obj_powerup_bonus</object>
+      <object>objects\obj_powerup_upgrade</object>
+      <object>objects\obj_powerup_tripleshot</object>
+      <object>objects\obj_powerup_boost</object>
+      <object>objects\obj_powerup_heart</object>
     </objects>
   </objects>
   <rooms name="rooms">

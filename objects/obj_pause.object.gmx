@@ -35,6 +35,8 @@ color = c_gray;
 alpha = 0.3;
 //Text size
 textScale = 2;
+//Array that contains all pause menu items
+pMenu[0] = -1;
 </string>
           </argument>
         </arguments>
@@ -105,16 +107,20 @@ scr_pause(paused);
 //Generate/Delete Pause Menu
 //Create Pause Menu when paused
 if paused {
-    var backButton = instance_create(room_width/2, room_height/2+100, obj_backToMenu);
+    pMenu[0] = instance_create(room_width/2, room_height/2-100, obj_changeRoom);
+    var backButton = pMenu[0];
     with (backButton) {
-    image_xscale = 5;
-    image_yscale = 5;
+    text = "Main Menu";
+    targetRoom = rm_menu_main;
     }
 }
 //Delete Pause Menu when unpaused
 else {
-    if instance_exists(obj_backToMenu)
-        instance_destroy(obj_backToMenu);
+    for (var i = 0; i&lt;array_length_1d(pMenu);i++) {
+    with(pMenu[i]) {
+        instance_destroy(id)
+    }
+    }
 }
 </string>
           </argument>
