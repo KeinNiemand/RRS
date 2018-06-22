@@ -51,8 +51,11 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="init">
+    <scripts name="excludedScripts">
       <script>scripts\scr_initAds.gml</script>
+      <script>scripts\scr_initTracking.gml</script>
+    </scripts>
+    <scripts name="init">
       <script>scripts\scr_registerEnemys.gml</script>
       <script>scripts\scr_registerPowerups.gml</script>
       <script>scripts\scr_windowSize.gml</script>
