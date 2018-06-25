@@ -213,10 +213,11 @@ if (os_type == os_android) global.device = 1;
 //Init ads and Analytics on Android devices
 if (global.device == 1) {
     //Init Ads if ads are enabled
-    if enableAds
+    if enableAds &amp;&amp; script_exists(scr_initAds);
         scr_initAds();
     //Init GoogleAnalytics
-    scr_initTracking();
+    if script_exists(scr_initTracking())
+        scr_initTracking();
     //Send Main Menu Screen to Google Analytics
     GoogleAnalytics_SendScreenView(room_get_name(room));
 }
