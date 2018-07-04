@@ -36,7 +36,7 @@
     <sprite>sprites\spr_powerup_bonus</sprite>
     <sprite>sprites\spr_powerup_boost</sprite>
     <sprite>sprites\spr_backToMenu</sprite>
-    <sprite>sprites\coin</sprite>
+    <sprite>sprites\spr_coin</sprite>
     <sprites name="menu">
       <sprite>sprites\spr_menu_button</sprite>
       <sprite>sprites\spr_menu_checkbox</sprite>
@@ -79,6 +79,7 @@
     <scripts name="UI">
       <script>scripts\scr_checkboxEffects.gml</script>
       <script>scripts\scr_hpdisplay.gml</script>
+      <script>scripts\scr_drawCoin.gml</script>
     </scripts>
     <scripts name="save">
       <script>scripts\scr_save.gml</script>
@@ -120,6 +121,7 @@
       <object>objects\obj_backToMenu</object>
       <object>objects\obj_title</object>
       <object>objects\obj_changeRoom</object>
+      <object>objects\obj_label</object>
     </objects>
     <objects name="Powerups">
       <object>objects\obj_powerup_bomb</object>
