@@ -35,6 +35,7 @@ sound = true;
 volume = 1;
 ad = 0;
 enableAds = false;
+coins = 0;
 </string>
           </argument>
         </arguments>

@@ -35,6 +35,8 @@
     <sprite>sprites\spr_powerup_tripleshot</sprite>
     <sprite>sprites\spr_powerup_bonus</sprite>
     <sprite>sprites\spr_powerup_boost</sprite>
+    <sprite>sprites\spr_backToMenu</sprite>
+    <sprite>sprites\coin</sprite>
     <sprites name="menu">
       <sprite>sprites\spr_menu_button</sprite>
       <sprite>sprites\spr_menu_checkbox</sprite>
@@ -42,7 +44,6 @@
       <sprite>sprites\spr_menu_slider</sprite>
       <sprite>sprites\spr_title</sprite>
     </sprites>
-    <sprite>sprites\spr_backToMenu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_dirt</background>
