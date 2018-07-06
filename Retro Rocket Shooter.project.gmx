@@ -64,7 +64,6 @@
     <scripts name="Misc">
       <script>scripts\scr_gotoRoom.gml</script>
       <script>scripts\scr_pause.gml</script>
-      <script>scripts\scr_setGUI.gml</script>
       <script>scripts\scr_postionAds.gml</script>
       <script>scripts\scr_cleanPause.gml</script>
       <script>scripts\scr_playPowerupSound.gml</script>
@@ -79,6 +78,7 @@
     <scripts name="UI">
       <script>scripts\scr_checkboxEffects.gml</script>
       <script>scripts\scr_hpdisplay.gml</script>
+      <script>scripts\scr_setGUI.gml</script>
       <script>scripts\scr_drawCoin.gml</script>
     </scripts>
     <scripts name="save">

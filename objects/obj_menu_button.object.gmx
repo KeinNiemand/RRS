@@ -31,6 +31,8 @@ pressed = false;
 sound = snd_sfx_menu;
 onClick = -1;
 image_xscale = 100;
+spriteColor = c_black;
+textColor = c_red;
 </string>
           </argument>
         </arguments>
@@ -178,14 +180,17 @@ script_execute(onclick);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>image_blend = spriteColor;
+draw_self();
 var oldColor = draw_get_colour();
-draw_set_color(c_red);
+draw_set_color(textColor);
 draw_set_font(fnt_medium);
 draw_set_halign(fa_middle);
+draw_set_valign(fa_center);
 draw_text(x, y, text);
 draw_set_color(c_black);
 draw_set_halign(fa_left);
+draw_set_color(oldColor);
 </string>
           </argument>
         </arguments>

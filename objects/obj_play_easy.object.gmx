@@ -78,6 +78,7 @@ if (pressed) scr_gotoRoom(lvl);
             <kind>1</kind>
             <string>event_inherited();
 draw_set_font(fnt_small);
+draw_set_valign(fa_top);
 draw_set_halign(fa_middle);
 draw_text(x, y+sprite_height/2,"Highscore: " + string(obj_storage.highscore[modeID]));
 draw_set_halign(fa_left);

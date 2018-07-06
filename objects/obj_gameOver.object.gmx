@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Pauses the game
+            <string>///Game Over Stuff
 event_inherited();
 scr_pause(true);
 //Create a button that leads back to the main menu TEMPORARY
@@ -33,7 +33,14 @@ pMenu[0] = instance_create(room_width/2,room_height/4,obj_changeRoom);
 var backButton = pMenu[0]
 with (backButton) {
     targetRoom = rm_menu_main;
-    text = "MainMenu"
+    text = "MainMenu";
+    spriteColor = c_red;
+}
+//Creates the button that ends the Game
+pMenu[1] = instance_create(room_width/2,pMenu[0].x+pMenu[0].sprite_height/2,obj_menu_button)
+with (pMenu[1]) {
+    text = "End Game";
+    spriteColor = c_white;
 }
 /*
 MAKES THE SCREEN BLACK
