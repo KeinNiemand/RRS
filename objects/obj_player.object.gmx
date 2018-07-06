@@ -320,17 +320,7 @@ else hspeed = -maxSpeed;
             <kind>1</kind>
             <string>///Show score and Lives
 //Run set GUI
-scr_setGUI();
-if (os_browser == browser_not_a_browser)
-    draw_text_transformed(0, 0, "Score:" + string(score), 1.3, 1.3, 0);
-else
-    draw_text_transformed(0, 0, "Score:" + string(score), 1, 1, 0);
-draw_set_halign(fa_right);
-if (os_browser == browser_not_a_browser)
-    draw_text_transformed(display_get_gui_width(), 0, "Hearts:" + string(hp), 1.3, 1.3, 0);
-else
-    draw_text_transformed(display_get_gui_width(), 0, "Hearts:" + string(hp), 1, 1, 0);   
-draw_set_halign(fa_left);
+
 </string>
           </argument>
         </arguments>

@@ -150,13 +150,16 @@ gameTime += 1/room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Show hiscore
+            <string>///Show GUI
 scr_setGUI();
+var scale = display_get_gui_width() / (string_width("Highscore:" + string(obj_storage.highscore[modeID]))+string_width("Score:" + string(score))+
+            string_width("Hearts:" + string(player.hp))+60)
 draw_set_halign(fa_middle);
-if (os_browser == browser_not_a_browser) {
-    draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), 1.3, 1.3, 0);    
-} else
-    draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), 1, 1, 0);
+draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), scale, scale, 0);    
+draw_set_halign(fa_left);
+draw_text_transformed(0, 0, "Score:" + string(score), scale, scale, 0);
+draw_set_halign(fa_right);
+draw_text_transformed(display_get_gui_width(), 0, "Hearts:" + string(player.hp), scale, scale, 0);
 draw_set_halign(fa_left);
 </string>
           </argument>
