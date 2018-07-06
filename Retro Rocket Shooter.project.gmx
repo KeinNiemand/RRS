@@ -121,7 +121,7 @@
       <object>objects\obj_backToMenu</object>
       <object>objects\obj_title</object>
       <object>objects\obj_changeRoom</object>
-      <object>objects\obj_label</object>
+      <object>objects\obj_coinDisplay</object>
     </objects>
     <objects name="Powerups">
       <object>objects\obj_powerup_bomb</object>
