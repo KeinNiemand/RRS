@@ -100,13 +100,13 @@
     <object>objects\obj_player</object>
     <object>objects\obj_bullet</object>
     <objects name="enemy">
-      <object>objects\obj_monster_fast</object>
+      <object>objects\obj_bullet_evil</object>
       <object>objects\obj_monster</object>
+      <object>objects\obj_monster_fast</object>
       <object>objects\obj_monster_strong</object>
       <object>objects\obj_monster_shooting</object>
       <object>objects\obj_monster_moving</object>
       <object>objects\obj_enemy_shooter</object>
-      <object>objects\obj_bullet_evil</object>
     </objects>
     <objects name="menu">
       <object>objects\obj_play_easy</object>

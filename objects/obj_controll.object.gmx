@@ -37,6 +37,10 @@ nextSpawn = 0;
 max_enemy = 1;
 unlockRate = 60;
 gameTime = 0;
+/*seconds per spawn per second 
+(600 means that spawns per seconds incresses by 1 every 10 minutes)
+*/
+sPerSpawnPS = 600;
 </string>
           </argument>
         </arguments>
@@ -58,10 +62,7 @@ gameTime = 0;
           <argument>
             <kind>1</kind>
             <string>///Add Enemys and Powerups to arrays
-//Add all normaly spawning monsters to this
 scr_registerEnemys();
-//Add all nomaly spawning powerups to this
-//scr_registerPowerups();
 </string>
           </argument>
         </arguments>
@@ -88,7 +89,7 @@ scr_registerEnemys();
 //Calculte Unlocked Enemys
 max_enemy = min(floor((gameTime)/unlockRate),array_length_1d(enemys)-1);
 //Spawn Monsters
-var lastSpawn = instance_create(irandom(room_width), 16, enemys[irandom(max_enemy)]);
+var lastSpawn = instance_create(irandom(room_width), -32, enemys[irandom(max_enemy)]);
 //Do Stuff in the last spawned monster
 with (lastSpawn) { 
     //Set Monster PowerUp Probability
@@ -119,9 +120,10 @@ with (lastSpawn) {
           <argument>
             <kind>1</kind>
             <string>///Set Monster Spawn Alarm and do other stuff
-spawnPS = min(startSpawnPS+gameTime/(600/difficulty), maxSpawnPS);
+//Calculate enemy Spawns per second
+spawnPS = min(startSpawnPS+gameTime/(sPerSpawnPS/difficulty), maxSpawnPS);
+//Set Monster Spawn Alarm
 if (alarm[0] == -1) alarm[0] = room_speed/spawnPS;
-luck = random(100);
 //Upate Highscore
 if (score &gt; obj_storage.highscore[modeID]) obj_storage.highscore[modeID] = score;
 //Update Backgroud scroll speed

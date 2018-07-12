@@ -87,7 +87,7 @@ if (luck &lt; powerupProbability) instance_create(x, y , powerups[irandom(array_
           <argument>
             <kind>1</kind>
             <string>///Step Event
-//End Detection
+//Get Trough
 player = obj_player;
 if (y&gt;=player.y+sprite_get_height(spr_player)/2+sprite_height/2){
     scr_playerLosseLives(2);
@@ -105,8 +105,8 @@ if (hp&lt;=0) {
     effect_create_above(ef_explosion, x, y, 0.5, c_orange);
     with(player) score += other.points;
     instance_destroy();
-    //Randomize Luck Value
-    luck = random(100);
+    //Spawn Powerup if lucky
+    var luck = random(100);
     if (luck &lt; powerupProbability) instance_create(x, y , powerups[irandom(array_length_1d(powerups)-1)]);
 }
 
