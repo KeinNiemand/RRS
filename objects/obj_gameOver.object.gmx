@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Game Over Stuff
 event_inherited();
+//Pause the game and delete pause background sprite
 scr_pause(true);
 //Create a button that leads back to the main menu TEMPORARY
 pMenu[0] = instance_create(room_width/2,room_height/4,obj_changeRoom);
@@ -44,11 +45,11 @@ with (pMenu[1]) {
 }
 /*
 MAKES THE SCREEN BLACK
-Set box draw variables to draw a intranparent black box
+Set box variables to draw a intranparent black box
 */
 color=c_black;
 alpha=1;
-//set draw text
+//Set Titel of Game Over Menu
 text="Game Over"
 //Set Text Size
 textScale = 1.5;
