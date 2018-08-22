@@ -29,12 +29,14 @@
       <sprite>sprites\spr_monster_fast</sprite>
       <sprite>sprites\spr_bullet_evil</sprite>
     </sprites>
-    <sprite>sprites\spr_powerup_bomb</sprite>
-    <sprite>sprites\spr_powerup_heart</sprite>
-    <sprite>sprites\spr_powerup_upgrade</sprite>
-    <sprite>sprites\spr_powerup_tripleshot</sprite>
-    <sprite>sprites\spr_powerup_bonus</sprite>
-    <sprite>sprites\spr_powerup_boost</sprite>
+    <sprites name="Powerups">
+      <sprite>sprites\spr_powerup_bomb</sprite>
+      <sprite>sprites\spr_powerup_heart</sprite>
+      <sprite>sprites\spr_powerup_tripleshot</sprite>
+      <sprite>sprites\spr_powerup_upgrade</sprite>
+      <sprite>sprites\spr_powerup_bonus</sprite>
+      <sprite>sprites\spr_powerup_boost</sprite>
+    </sprites>
     <sprite>sprites\spr_backToMenu</sprite>
     <sprite>sprites\spr_coin</sprite>
     <sprites name="menu">
@@ -79,7 +81,8 @@
       <script>scripts\scr_checkboxEffects.gml</script>
       <script>scripts\scr_hpdisplay.gml</script>
       <script>scripts\scr_setGUI.gml</script>
-      <script>scripts\scr_drawCoin.gml</script>
+      <script>scripts\scr_drawSpriteText.gml</script>
+      <script>scripts\scr_drawSpriteTextScale.gml</script>
     </scripts>
     <scripts name="save">
       <script>scripts\scr_save.gml</script>

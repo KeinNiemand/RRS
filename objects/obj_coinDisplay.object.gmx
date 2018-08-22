@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text = obj_storage.coins;
+            <string>text = string(obj_storage.coins) + "~";
 </string>
           </argument>
         </arguments>
@@ -71,10 +71,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_valign(fa_center);
+            <string>draw_set_valign(fa_top);
 draw_set_halign(fa_right);
-scr_drawCoin(text,x,y);
-draw_set_valign(fa_top);
+scr_drawSpriteText(text,x,y,spr_coin);
 draw_set_halign(fa_left);
 </string>
           </argument>

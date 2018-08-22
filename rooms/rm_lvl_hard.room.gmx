@@ -53,7 +53,7 @@ draw_set_color(c_white);</code>
   </views>
   <instances>
     <instance objName="obj_player" x="176" y="608" name="inst_661BB450" locked="0" code="hp = 2;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_controll" x="0" y="0" name="inst_BE3E0C4E" locked="0" code="modeID = 2;&#xA;difficulty = 1.2;&#xA;startSpawnPS *= 1.2;&#xA;unlockRate /= 1.2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_controll" x="0" y="0" name="inst_BE3E0C4E" locked="0" code="modeID = 2;&#xA;difficulty = 1.2;&#xA;startSpawnPS *= 1.2;&#xA;unlockRate /= 1.2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="336" y="0" name="inst_BD2B47F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
