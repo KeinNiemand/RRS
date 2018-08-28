@@ -31,7 +31,7 @@ if (global.device == 0 &amp;&amp; instance_exists(obj_controll)) instance_destro
 text = "";
 sound = snd_sfx_back;
 image_xscale = xscale;
-sprite_color = -1;
+spriteColor = -1;
 </string>
           </argument>
         </arguments>

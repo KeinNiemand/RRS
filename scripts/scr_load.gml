@@ -12,6 +12,6 @@ for (var i=array_length_1d(highscore)-1; i>=0; i--) {
 enableAds = real(base64_decode(ini_read_string("other", base64_encode("enableAds"), base64_encode("0"))));
 ad = ini_read_real("other", "ad", 0);
 //Load Inventory
-coins = round(real(base64_decode((ini_read_string("inventory", base64_encode("coins"), base64_encode(0.0))))));
+coins = round(real(base64_decode((ini_read_string("inventory", "coins", base64_encode("0"))))));
 //Close Save File
 ini_close();

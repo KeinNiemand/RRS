@@ -12,6 +12,6 @@ ini_write_real("options", "music", music);
 ini_write_string("other", base64_encode("enableAds"), base64_encode(string(enableAds)));
 ini_write_real("other", "ad", ad)
 //Save Coin and Skin Stuff
-ini_write_string("inventory", base64_encode("coins"), base64_encode(string(coins)));
+ini_write_string("inventory", "coins", base64_encode(string(coins)));
 //Close Save File
 ini_close();
