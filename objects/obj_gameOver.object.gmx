@@ -27,6 +27,13 @@
             <kind>1</kind>
             <string>///Game Over Stuff
 event_inherited();
+/*save variable value since obj_control is disabled and canot
+  be accesed while paused 
+  and it is needed to calculate EndGameStuff
+*/
+difficulty = obj_controll.difficulty;
+gameTime = obj_controll.gameTime;
+modeID = obj_controll.modeID;
 //Pause the game and delete pause background sprite
 scr_pause(true);
 //Create a button that leads back to the main menu TEMPORARY
@@ -42,6 +49,7 @@ pMenu[1] = instance_create(room_width/2,pMenu[0].x+pMenu[0].sprite_height/2,obj_
 with (pMenu[1]) {
     text = "End Game";
     spriteColor = c_white;
+    onClick  = scr_EndGame;
 }
 /*
 MAKES THE SCREEN BLACK

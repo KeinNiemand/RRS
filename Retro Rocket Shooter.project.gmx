@@ -84,6 +84,7 @@
       <script>scripts\scr_drawSpriteText.gml</script>
       <script>scripts\scr_drawSpriteTextScale.gml</script>
       <script>scripts\scr_fixColor.gml</script>
+      <script>scripts\scr_EndGame.gml</script>
     </scripts>
     <scripts name="save">
       <script>scripts\scr_save.gml</script>
@@ -113,13 +114,13 @@
       <object>objects\obj_enemy_shooter</object>
     </objects>
     <objects name="menu">
+      <object>objects\obj_menu_button</object>
       <object>objects\obj_play_easy</object>
       <object>objects\obj_play_normal</object>
       <object>objects\obj_play_hard</object>
       <object>objects\obj_menu_end</object>
       <object>objects\obj_menu_test</object>
       <object>objects\obj_menu_options</object>
-      <object>objects\obj_menu_button</object>
       <object>objects\obj_menu_checkbox</object>
       <object>objects\obj_menu_slidebar</object>
       <object>objects\obj_backToMenu</object>

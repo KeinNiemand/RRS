@@ -157,7 +157,7 @@ if (position_meeting(mouse_x, mouse_y, id)) {
           <argument>
             <kind>1</kind>
             <string>///execute onclick
-script_execute(onclick);
+script_execute(onClick);
 </string>
           </argument>
         </arguments>
