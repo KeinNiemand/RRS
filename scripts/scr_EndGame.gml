@@ -2,7 +2,7 @@
 Script that get executet after ending the Game (get coins, update Highscore, ...)
 */
 //how many points are needed to get 1 coin
-var scorePerCoin = 10;
+var scorePerCoin = 500;
 
 with(obj_gameOver) {
     //Remove everything from the GameOver Pause Menu
