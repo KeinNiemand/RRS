@@ -207,10 +207,10 @@ alarm[0] = room_speed*15;
             <string>///Init Game
 if (music) audio_play_sound(snd_mfx_background,70,true);
 audio_master_gain(volume)
-//Set global.device
+//Set global.device varible 0=default,1=android
 global.device = 0;
-//if android version then set global.device to 1
 if (os_type == os_android) global.device = 1;
+
 //Init ads and Analytics on Android devices
 if (global.device == 1) {
     //Init Ads if ads are enabled

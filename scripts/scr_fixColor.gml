@@ -7,5 +7,8 @@ var inputColour = argument0;
 var red = colour_get_blue(inputColour);
 var green = colour_get_green(inputColour);
 var blue = colour_get_red(inputColour);
-return (make_colour_rgb(red,green,blue));
+if global.device == 0
+    return (make_colour_rgb(red,green,blue));
+else
+    return inputColour;
 
