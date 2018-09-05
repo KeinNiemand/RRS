@@ -61,6 +61,8 @@ alpha=1;
 text="Game Over"
 //Set Text Size
 textScale = 1.5;
+//set gameEnd (activates the drawing of stats, recived coins, ...) to false
+gameEnd = false;
 </string>
           </argument>
         </arguments>
@@ -86,6 +88,8 @@ textScale = 1.5;
             <string>//paused needs to be ture becouse obj_pause draw event checks if paused is true
 paused = true;
 event_inherited();
+if gameEnd
+    scr_EndGameDraw();
 </string>
           </argument>
         </arguments>
