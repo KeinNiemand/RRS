@@ -2,7 +2,7 @@
 Script that get executet after ending the Game (get coins, update Highscore, ...)
 */
 //how many points are needed to get 1 coin
-var scorePerCoin = 500;
+var scorePerCoin = 10;
 
 with(obj_gameOver) {
     //Remove everything from the GameOver Pause Menu
@@ -31,11 +31,21 @@ with(obj_gameOver) {
         y -= sprite_height;
     }
     
-    //Code Here
-    //code here
+    //Calculate number of coins earned
+    normalCoinsE = round(score/scorePerCoin);
+    var highscoreDiff = (obj_storage.highscore[modeID]-oldHighscore)
+    highscoreCoinsE = round(min(0, highscoreDiff));
+    coinsE = normalCoinsE+highscoreCoinsE;
+    difficultyMult = sqr(difficulty);
+    totalCoinsE = round(difficultyMult*coinsE);
+    obj_storage.coins += round(totalCoinsE);
     
     //Enable EndGame GUI drawing
     gameEnd = true;
-     
+    
+    //Save the Game
+    with(obj_storage) {
+        scr_save();
+    }
 }
 

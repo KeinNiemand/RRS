@@ -9,16 +9,12 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 //caclulate sprite scale
-var spritescale = (string_height(input)/sprite_get_height(sprite));
+var spritescale = (string_height("0123456789")/sprite_get_height(sprite));
 
 //IF there is a ~ in the text split the text int text 1 or 2
 if (string_count("~", input) > 0) {
     var text1 = string_copy(input, 0 , string_pos("~",input)-1)
     var text2 = string_copy(input, string_pos("~",input)+1 , string_length(input)-string_pos("~",input))
-    //Draw the coinsprite only if there is a ~ in the input
-    draw_sprite_ext(sprite,0,
-    xtext+(string_width(text1)*xscale)+(sprite_get_width(sprite)*xscale*spritescale)/2,
-    ytext+(sprite_get_height(sprite)*yscale*spritescale)/2,xscale*spritescale,yscale*spritescale,0,c_white,1);
 }
 //otherwise set text 2 to be empty
 else {
@@ -27,13 +23,31 @@ else {
 }
 //draw text1
 draw_text_transformed(xtext,ytext, text1,xscale,yscale,0);
-//draw next text after the coin sprite
-xtext += string_width(text1)*xscale+sprite_get_width(sprite)*xscale;
-//if there are any ~ repeat the process
-if (string_count("~", text2) > 0) {
-    scr_drawSpriteTextScale(text2,xtext,ytext,sprite,xscale,yscale);
+//calculate sprite x and y coordinats
+var xspr = xtext+string_width(text1)*xscale+(sprite_get_width(sprite)*xscale*spritescale)/2;
+var yspr = ytext+(sprite_get_height(sprite)*yscale*spritescale)/2;
+
+
+if (string_count("#", text1) > 0) {
+    xtext = argument1;
+    ytext += string_height("M")*yscale*string_count("#", text1);
+    yspr += string_height("M")*yscale*string_count("#", text1);
+    
 }
-//else draw text2
 else {
-    draw_text_transformed(xtext,ytext, text2,xscale,yscale,0);
+    xtext += string_width(text1)*xscale+sprite_get_width(sprite)*xscale;
+}
+
+//Draw Sprite
+if (string_count("~", input) > 0) {
+    draw_sprite_ext(sprite,0,xspr,yspr,xscale*spritescale,yscale*spritescale,0,-1,1);
+}
+
+//if (string_count("#",text2) > 0) {
+//    ytext += string_height("M")*yscale
+//}
+
+//if there are any ~ repeat the process
+if (text2 != "") {
+    scr_drawSpriteTextScale(text2,xtext,ytext,sprite,xscale,yscale);
 }
