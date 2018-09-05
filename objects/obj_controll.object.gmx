@@ -154,12 +154,14 @@ gameTime += 1/room_speed;
             <kind>1</kind>
             <string>///Show GUI
 scr_setGUI();
+
 var scale = display_get_gui_width() / (string_width("Highscore:" + string(obj_storage.highscore[modeID]))+string_width("Score:" + string(score))+
             string_width(string(player.hp))+sprite_get_width(spr_powerup_heart)+60)
 var scale1 = (display_get_gui_width()/2.5)/(string_width("Highscore:" + string(obj_storage.highscore[modeID]))+20)
 var scale2 = (display_get_gui_width()/3)/(string_width("Score:" + string(score))+20)
 var scale3 = (display_get_gui_width()/3)/(string_width(string(player.hp))+sprite_get_width(spr_powerup_heart)+20)
 scale = min(scale,scale1,scale2,scale3)
+
 draw_set_halign(fa_middle);
 draw_text_transformed(display_get_gui_width()/2, 0, "Highscore:" + string(obj_storage.highscore[modeID]), scale, scale, 0);    
 draw_set_halign(fa_left);
