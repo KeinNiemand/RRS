@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>event_inherited();
 points = 5;
-attackmul = 0.5;
-spsmul = 1;
+attackmul = 1.5;
+spsmul = 2;
 duration = 7.5;
 vspeed = 5;
 </string>
@@ -55,8 +55,8 @@ vspeed = 5;
             <kind>1</kind>
             <string>event_inherited()
 with (other) {
-    attackmul += other.attackmul;
-    spsmul += other.spsmul;
+    attackmul = other.attackmul;
+    spsmul = other.spsmul;
     alarm[2] = other.duration*room_speed;
 }
 </string>
