@@ -27,7 +27,10 @@
             <kind>1</kind>
             <string>image_speed = 0.2;
 hp = 6;
+//shoots per second
 sps = 5;
+//max shoots per second
+maxsps = 10;
 score = 0;
 tripleshot = false;
 attack = 1;
@@ -150,7 +153,8 @@ if (obj_storage.sound) {
           <argument>
             <kind>1</kind>
             <string>///Shoot Bullets
-if (alarm[0] == -1) alarm[0] = room_speed/(sps*spsmul);
+var trueSps = (min(sps,maxsps)*spsmul);
+if (alarm[0] == -1) alarm[0] = room_speed/trueSps;
 </string>
           </argument>
         </arguments>
