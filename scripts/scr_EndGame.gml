@@ -3,6 +3,7 @@ Script that get executet after ending the Game (get coins, update Highscore, ...
 */
 //how many points are needed to get 1 coin
 var scorePerCoin = 500;
+var highscoreMul = 3;
 
 with(obj_gameOver) {
     //Remove everything from the GameOver Pause Menu
@@ -16,7 +17,7 @@ with(obj_gameOver) {
     //Update highscore
     oldHighscore = obj_storage.highscore[modeID];
     if (score > obj_storage.highscore[modeID])
-        highscore[modeID] = score;
+        obj_storage.highscore[modeID] = score;
     
     //Send GoogleAnalytics Game-Over event
     GoogleAnalytics_SendEventExt("player", "Game-Over", killedBy, gameTime);
@@ -34,7 +35,7 @@ with(obj_gameOver) {
     //Calculate number of coins earned
     normalCoinsE = round(score/scorePerCoin);
     var highscoreDiff = (obj_storage.highscore[modeID]-oldHighscore)
-    highscoreCoinsE = round(min(0, highscoreDiff));
+    highscoreCoinsE = round(max(0, (highscoreMul*highscoreDiff)/scorePerCoin));
     coinsE = normalCoinsE+highscoreCoinsE;
     difficultyMult = sqr(difficulty);
     totalCoinsE = round(difficultyMult*coinsE);
