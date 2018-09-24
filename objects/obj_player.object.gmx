@@ -36,8 +36,8 @@ tripleshot = false;
 attack = 1;
 attackmul = 1;
 spsmul = 1;
-maxSpeed = 9;
-acceleration = 1;
+maxSpeed = 500/room_speed;
+acceleration = 50/room_speed;
 killedBy = "";
 </string>
           </argument>
