@@ -41,6 +41,9 @@ with(obj_gameOver) {
     totalCoinsE = round(difficultyMult*coinsE);
     obj_storage.coins += round(totalCoinsE);
     
+    //Send Google Analytics events
+    GoogleAnalytics_SendEventExt("coins", "earned", "", totalCoinsE);
+    
     //Enable EndGame GUI drawing
     gameEnd = true;
     
