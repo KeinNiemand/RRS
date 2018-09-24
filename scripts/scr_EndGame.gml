@@ -28,7 +28,7 @@ with(obj_gameOver) {
     with (backButton) {
         targetRoom = rm_menu_main;
         text = "Main Menu";
-        spriteColor = c_red;
+        spriteColor = c_white;
         image_yscale = 2;
         y -= sprite_height;
     }
