@@ -36,7 +36,9 @@ tripleshot = false;
 attack = 1;
 attackmul = 1;
 spsmul = 1;
+//In Pixel per Frame (Pixels per second/FPS)
 maxSpeed = 500/room_speed;
+//In Pixels per Frame² (Pixel per second²/FPS)
 acceleration = 50/room_speed;
 killedBy = "";
 </string>
