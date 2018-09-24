@@ -59,8 +59,6 @@ playerCollision = false;
           <argument>
             <kind>1</kind>
             <string>///Init2: Base Calculations
-//change speed based on difficulty
-vspeed = baseSpeed*sqrt(obj_controll.difficulty);
 </string>
           </argument>
         </arguments>
@@ -133,6 +131,8 @@ if (hp&lt;=0) {
     var luck = random(100);
     if (luck &lt; powerupProbability) instance_create(x, y , powerups[irandom(array_length_1d(powerups)-1)]);
 }
+//Set vspeed based on difficulty and base speed
+vspeed = baseSpeed*sqrt(obj_controll.difficulty);
 </string>
           </argument>
         </arguments>

@@ -113,6 +113,7 @@ if paused {
     with (backButton) {
     text = "Main Menu";
     targetRoom = rm_menu_main;
+    image_yscale = 2;
     }
 }
 //Delete Pause Menu when unpaused

@@ -27,8 +27,9 @@ with(obj_gameOver) {
     var backButton = pMenu[0]
     with (backButton) {
         targetRoom = rm_menu_main;
-        text = "MainMenu";
+        text = "Main Menu";
         spriteColor = c_red;
+        image_yscale = 2;
         y -= sprite_height;
     }
     

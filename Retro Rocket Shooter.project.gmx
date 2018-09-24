@@ -114,7 +114,7 @@
       <object>objects\obj_monster_moving</object>
       <object>objects\obj_enemy_shooter</object>
     </objects>
-    <objects name="menu">
+    <objects name="GUI">
       <object>objects\obj_menu_button</object>
       <object>objects\obj_play_easy</object>
       <object>objects\obj_play_normal</object>
@@ -128,6 +128,7 @@
       <object>objects\obj_title</object>
       <object>objects\obj_changeRoom</object>
       <object>objects\obj_coinDisplay</object>
+      <object>objects\obj_ingameButton</object>
     </objects>
     <objects name="Powerups">
       <object>objects\obj_powerup_bomb</object>

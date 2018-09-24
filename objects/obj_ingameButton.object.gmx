@@ -3,9 +3,9 @@
   <spriteName>spr_menu_button</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_ingameButton</parentName>
+  <parentName>obj_menu_button</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,32 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited()
-onClick = scr_gotoRoom;
-targetRoom = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>script_execute(onClick, targetRoom);
+            <string>event_inherited();
+font = fnt_large;
 </string>
           </argument>
         </arguments>
