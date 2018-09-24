@@ -13,7 +13,7 @@ with (obj_player) {
         if (argument_count == 1)
             killedBy = object_get_name(other.object_index);
         else
-            killedBy = object_get_name(argument[1]) + "_" + object_get_name(other.object_index);
+            killedBy = object_get_name(argument[1]) + ": " + object_get_name(other.object_index);
         scr_Death();
     }
 }
