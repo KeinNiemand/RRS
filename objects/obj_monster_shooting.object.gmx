@@ -88,7 +88,7 @@ with (lastBullet) {
             <string>///Shoot Alarm Code
 event_inherited();
 //calculate true sps (based on difficulty and regular sps)
-var trueSps = (sps*sqrt(obj_controll.difficulty));
+var trueSps = (sps*lgScale);
 if (alarm[1] == -1 &amp;&amp; sps&gt;0) alarm[1] = room_speed/trueSps;
 
 </string>

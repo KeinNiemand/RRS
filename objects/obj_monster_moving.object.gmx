@@ -28,7 +28,7 @@
             <string>event_inherited();
 move = 3;
 hspeed = choose(move, -move);
-points = 4;
+points = 3;
 
 </string>
           </argument>

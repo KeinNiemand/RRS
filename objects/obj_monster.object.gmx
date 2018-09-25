@@ -58,7 +58,8 @@ playerCollision = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Init2: Base Calculations
+            <string>///Init2: Base Calculations/Values from controller
+lgScale = obj_controll.lgScale;
 </string>
           </argument>
         </arguments>
@@ -132,7 +133,7 @@ if (hp&lt;=0) {
     if (luck &lt; powerupProbability) instance_create(x, y , powerups[irandom(array_length_1d(powerups)-1)]);
 }
 //Set vspeed based on difficulty and base speed
-vspeed = baseSpeed*sqrt(obj_controll.difficulty);
+vspeed = baseSpeed*lgScale;
 </string>
           </argument>
         </arguments>
