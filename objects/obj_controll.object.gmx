@@ -41,6 +41,7 @@ gameTime = 0;
 (600 means that spawns per seconds incresses by 1 every 10 minutes)
 */
 sPerSpawnPS = 500;
+lgScale = 1;
 </string>
           </argument>
         </arguments>
@@ -134,6 +135,7 @@ var lastSpawn = instance_create(irandom(room_width), -32, enemys[irandom(max_ene
 with (lastSpawn) { 
     //Set Monster PowerUp Probability
     powerupProbability *= other.powerupProbability;
+    points *= other.lgScale
 }
 //if (luck &lt; powerupProbability) instance_create(irandom(room_width), 32 , powerups[irandom(array_length_1d(powerups)-1)]);
 
