@@ -4,7 +4,7 @@
   <width>180</width>
   <height>320</height>
   <vsnap>16</vsnap>
-  <hsnap>18</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -60,7 +60,7 @@ scr_windowSize();</code>
     <instance objName="obj_menu_end" x="90" y="272" name="inst_3BD611BD" locked="0" code="" scaleX="2.765625" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_options" x="90" y="192" name="inst_28C26FE9" locked="0" code="" scaleX="2.859375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_title" x="72" y="0" name="inst_10911F79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_coinDisplay" x="144" y="16" name="inst_F2123949" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coinDisplay" x="126" y="0" name="inst_F2123949" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
