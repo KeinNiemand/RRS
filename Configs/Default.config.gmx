@@ -501,7 +501,7 @@
     <option_version_build>0</option_version_build>
     <option_version_company>KeinNiemand</option_version_company>
     <option_version_copyright></option_version_copyright>
-    <option_version_description>Die Windwos Testversion von Game1</option_version_description>
+    <option_version_description>Die Windwos Testversion von RRS</option_version_description>
     <option_version_major>0</option_version_major>
     <option_version_minor>10</option_version_minor>
     <option_version_product>Retro Rocket Shooter</option_version_product>
@@ -582,7 +582,7 @@
     <option_windows_company_info>KeinNiemand</option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
-    <option_windows_description_info>Die Windwos Testversion von Game1</option_windows_description_info>
+    <option_windows_description_info>Die Windwos Testversion von RRS</option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
