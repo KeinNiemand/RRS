@@ -75,6 +75,7 @@
     </scripts>
     <scripts name="Utility">
       <script>scripts\scr_irandomRange.gml</script>
+      <script>scripts\scr_getTimeString.gml</script>
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_checkboxEffects.gml</script>
