@@ -29,7 +29,7 @@
     highscore[i] = 0;
 }
 if (instance_number(obj_storage) &gt; 1) instance_destroy();
-alarm[0] = room_speed*15;
+alarm[0] = room_speed*60*5;
 music = true;
 sound = true;
 volume = 1;
