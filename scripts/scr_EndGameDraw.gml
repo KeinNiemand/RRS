@@ -24,4 +24,4 @@ for (var i=0; i < array_length_1d(line); i++) {
     lines += line[i]
 }
 //draw the text
-scr_drawSpriteTextScale(lines, 0, height, spr_coin,0.75,0.75);
+scr_drawSpriteTextScaleLines(lines, 0, height, spr_coin,0.75,0.75);
