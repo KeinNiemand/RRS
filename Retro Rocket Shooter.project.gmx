@@ -21,8 +21,8 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprites name="Enemy">
       <sprite>sprites\spr_monster</sprite>
-      <sprite>sprites\spr_monster_shooting</sprite>
-      <sprite>sprites\spr_enemy_shooter</sprite>
+      <sprite>sprites\spr_ship0</sprite>
+      <sprite>sprites\spr_ship1</sprite>
       <sprite>sprites\spr_monster_moving</sprite>
       <sprite>sprites\spr_monster_strong</sprite>
       <sprite>sprites\spr_monster_fast</sprite>
