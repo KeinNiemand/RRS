@@ -111,9 +111,9 @@
       <object>objects\obj_monster</object>
       <object>objects\obj_monster_fast</object>
       <object>objects\obj_monster_strong</object>
-      <object>objects\obj_monster_shooting</object>
       <object>objects\obj_monster_moving</object>
-      <object>objects\obj_enemy_shooter</object>
+      <object>objects\obj_ship0</object>
+      <object>objects\obj_ship1</object>
     </objects>
     <objects name="GUI">
       <objects name="buttons">
