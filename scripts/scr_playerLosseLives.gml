@@ -27,7 +27,7 @@ if argument_count == 1 {
 else {
     /**Set damgedBy to the object in the first argument + 
     the name of the object that is running the script sperated by _ **/
-   damagedBy = object_get_name(argument[1]) + "_" + object_get_name(object_index);
+   damagedBy = object_get_name(argument[1]) + ": " + object_get_name(object_index);
 }
 //Send lostLife/S event to GoogleAnalytics
 GoogleAnalytics_SendEventExt("player", "lostLife", damagedBy, dmg);
