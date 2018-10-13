@@ -42,6 +42,8 @@ gameTime = 0;
 */
 sPerSpawnPS = 500;
 lgScale = 1;
+//stores number of continues +1 
+currentContinue = 1;
 </string>
           </argument>
         </arguments>

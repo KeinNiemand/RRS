@@ -34,6 +34,7 @@ event_inherited();
 difficulty = obj_controll.difficulty;
 gameTime = obj_controll.gameTime;
 modeID = obj_controll.modeID;
+currentContinue = obj_controll.currentContinue;
 //Pause the game and delete pause background sprite
 scr_pause(true);
 
@@ -45,15 +46,17 @@ with (pMenu[0]) {
     onClick  = scr_EndGame;
     image_yscale = 2;
     y-= sprite_height;
+    textColor = c_white;
 }
 //Creates continue button
-pMenu[1] = instance_create(room_width/2,room_height/4,obj_ingameButton);
+pMenu[1] = instance_create(room_width/2,room_height/4,obj_spriteDrawButton);
 var continiueButton = pMenu[1];
 //set continue button setting
 with (continiueButton) {
-    text = "continue:"
+    text = "continue: x~"
     spriteColor = c_green;
     image_yscale = 2;
+    sprite = spr_coin;
 }
 /*
 MAKES THE SCREEN BLACK

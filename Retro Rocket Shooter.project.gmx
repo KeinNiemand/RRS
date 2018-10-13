@@ -127,11 +127,12 @@
         <object>objects\obj_changeRoom</object>
         <object>objects\obj_ingameButton</object>
         <object>objects\obj_menu_test</object>
+        <object>objects\obj_spriteDrawButton</object>
       </objects>
-      <object>objects\obj_menu_checkbox</object>
       <object>objects\obj_menu_slidebar</object>
       <object>objects\obj_backToMenu</object>
       <object>objects\obj_title</object>
+      <object>objects\obj_menu_checkbox</object>
       <object>objects\obj_coinDisplay</object>
     </objects>
     <objects name="Powerups">
