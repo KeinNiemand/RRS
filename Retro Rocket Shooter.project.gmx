@@ -116,20 +116,22 @@
       <object>objects\obj_enemy_shooter</object>
     </objects>
     <objects name="GUI">
-      <object>objects\obj_menu_button</object>
-      <object>objects\obj_play_easy</object>
-      <object>objects\obj_play_normal</object>
-      <object>objects\obj_play_hard</object>
-      <object>objects\obj_menu_end</object>
-      <object>objects\obj_menu_test</object>
-      <object>objects\obj_menu_options</object>
+      <objects name="buttons">
+        <object>objects\obj_menu_button</object>
+        <object>objects\obj_play_easy</object>
+        <object>objects\obj_play_normal</object>
+        <object>objects\obj_play_hard</object>
+        <object>objects\obj_menu_end</object>
+        <object>objects\obj_menu_options</object>
+        <object>objects\obj_changeRoom</object>
+        <object>objects\obj_ingameButton</object>
+        <object>objects\obj_menu_test</object>
+      </objects>
       <object>objects\obj_menu_checkbox</object>
       <object>objects\obj_menu_slidebar</object>
       <object>objects\obj_backToMenu</object>
       <object>objects\obj_title</object>
-      <object>objects\obj_changeRoom</object>
       <object>objects\obj_coinDisplay</object>
-      <object>objects\obj_ingameButton</object>
     </objects>
     <objects name="Powerups">
       <object>objects\obj_powerup_bomb</object>
