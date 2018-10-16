@@ -125,7 +125,6 @@ with (pMenu[0]) {
     onClick  = scr_EndGame;
     image_yscale = 2;
     y-= sprite_height;
-    textColor = c_white;
 }
 
 
@@ -142,9 +141,18 @@ with (continueButton) {
         spriteColor = c_green;
     else
         spriteColor = c_silver;
+    //set imaga_yscale to 2 becouse button is inGame
     image_yscale = 2;
+    //set sprite (at the end of the text) to spr_coin
     sprite = spr_coin;
+    //set text color to white
+    textColor = c_white;
 }
+
+
+//Add Coindisplay
+pMenu[2] = instance_create(room_width*0.75 , string_height("Game Over")*2 , obj_coinDisplay);
+
 
 </string>
           </argument>
