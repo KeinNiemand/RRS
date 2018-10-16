@@ -25,18 +25,97 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Game Over Stuff
+            <string>///Pre Pausing
 event_inherited();
 /*save variable value since obj_control is disabled and canot
   be accesed while paused 
-  and it is needed to calculate EndGameStuff
+  and it is needed to calculate stuff
 */
 difficulty = obj_controll.difficulty;
 gameTime = obj_controll.gameTime;
 modeID = obj_controll.modeID;
 currentContinue = obj_controll.currentContinue;
-//Pause the game and delete pause background sprite
+//Pause the game
 scr_pause(true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Init Game Over Screen
+/*
+MAKES THE SCREEN BLACK
+Set box variables to draw a opaque black box
+*/
+color=c_black;
+alpha=1;
+//Set Titel of Game Over Menu
+text="Game Over"
+//Set Text Size
+textScale = 1.5;
+//set gameEnd (activates the drawing of stats, recived coins, ...) to false
+gameEnd = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Calculate Stuff
+
+//Calculate continuePrice
+continuePrice = 4*sqr(currentContinue);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Generate Game Over Menu
+
 
 //Creates the button that ends the Game
 pMenu[0] = instance_create(room_width/2,room_height,obj_ingameButton);
@@ -48,28 +127,25 @@ with (pMenu[0]) {
     y-= sprite_height;
     textColor = c_white;
 }
+
+
 //Creates continue button
 pMenu[1] = instance_create(room_width/2,room_height/4,obj_spriteDrawButton);
-var continiueButton = pMenu[1];
+var continueButton = pMenu[1];
 //set continue button setting
-with (continiueButton) {
-    text = "continue: x~"
-    spriteColor = c_green;
+with (continueButton) {
+    //Set Text to show Price
+    text = "continue: " + string(other.continuePrice) + "~";
+    
+    //Set Sprite Color to Green if you can afford to continue otherwise set it to silver
+    if(other.continuePrice &lt;= obj_storage.coins)
+        spriteColor = c_green;
+    else
+        spriteColor = c_silver;
     image_yscale = 2;
     sprite = spr_coin;
 }
-/*
-MAKES THE SCREEN BLACK
-Set box variables to draw a intranparent black box
-*/
-color=c_black;
-alpha=1;
-//Set Titel of Game Over Menu
-text="Game Over"
-//Set Text Size
-textScale = 1.5;
-//set gameEnd (activates the drawing of stats, recived coins, ...) to false
-gameEnd = false;
+
 </string>
           </argument>
         </arguments>
