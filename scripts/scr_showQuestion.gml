@@ -1,6 +1,7 @@
 /*
 Shows Async Question Dialog for use in buttons
 usage
-scr_showQuestion message
+scr_showQuestion (message)
 */
-msg = show_question_async(msg); 
+question = argument0;
+return show_question_async(question); 

@@ -147,6 +147,9 @@ with (continueButton) {
     sprite = spr_coin;
     //set text color to white
     textColor = c_white;
+    //Run scr_continueButtonClick when clicken on button
+    onClick = scr_continueButtonClick;
+    
 }
 
 

@@ -132,22 +132,17 @@ if (position_meeting(mouse_x, mouse_y, id)) {
 if action == 0 {
     var i_d, stat;
     i_d = ds_map_find_value(async_load, "id");
-    if i_d == msg
-       {
           event_user(1);
-       }
 }
 //Reset
 if action == 1 {
     var i_d, stat;
     i_d = ds_map_find_value(async_load, "id");
-    if i_d == msg
-       {
+    
        if ds_map_find_value(async_load, "status")
           {
           scr_reset();
           }
-       }
 }
 </string>
           </argument>

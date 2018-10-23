@@ -94,6 +94,9 @@
       <script>scripts\scr_reset.gml</script>
       <script>scripts\scr_load.gml</script>
     </scripts>
+    <scripts name="buttonScripts">
+      <script>scripts\scr_continueButtonClick.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_small</font>
