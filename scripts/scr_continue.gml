@@ -28,12 +28,11 @@ with (obj_player) hp = 1;
 //Clear inGame screen (destroy all enemys, enemy bullets and bullet on screen)
 
 
-//Check every object if it is an enemy if it is an enemy destroy it
-with (all) 
-{
-    if (object_is_ancestor(object_index, obj_monster) || object_index == obj_monster)
-        instance_destroy();
+//Destroy all enemys
+for (var i = 0; i < array_length_1d(obj_controll.enemys); i++) {
+    with (obj_controll.enemys[i]) instance_destroy();
 }
+
 //Destroy all Enemy bullets
 with (obj_bullet_evil) instance_destroy();
 //destroy all player bullets
