@@ -17,7 +17,7 @@
     <option_android_arch_mipsr2sf>false</option_android_arch_mipsr2sf>
     <option_android_arch_x86>True</option_android_arch_x86>
     <option_android_build_tools_version>28.0.3</option_android_build_tools_version>
-    <option_android_build_version>1</option_android_build_version>
+    <option_android_build_version>2</option_android_build_version>
     <option_android_color_depth>0</option_android_color_depth>
     <option_android_compile_sdk_version>28</option_android_compile_sdk_version>
     <option_android_display_name>Retro Rocket Shooter</option_android_display_name>
@@ -497,7 +497,7 @@
     <option_use_fast_collision>False</option_use_fast_collision>
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
-    <option_version>0.11.1</option_version>
+    <option_version>0.11.2</option_version>
     <option_version_build>0</option_version_build>
     <option_version_company>KeinNiemand</option_version_company>
     <option_version_copyright></option_version_copyright>
