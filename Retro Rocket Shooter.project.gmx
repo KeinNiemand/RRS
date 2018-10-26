@@ -70,24 +70,25 @@
       <script>scripts\scr_playPowerupSound.gml</script>
       <script>scripts\scr_showQuestion.gml</script>
     </scripts>
-    <scripts name="Player">
-      <script>scripts\scr_Death.gml</script>
-      <script>scripts\scr_playerLosseLives.gml</script>
-    </scripts>
     <scripts name="Utility">
       <script>scripts\scr_irandomRange.gml</script>
       <script>scripts\scr_getTimeString.gml</script>
     </scripts>
+    <scripts name="inGame">
+      <scripts name="Player">
+        <script>scripts\scr_Death.gml</script>
+        <script>scripts\scr_playerLosseLives.gml</script>
+      </scripts>
+      <script>scripts\scr_EndGame.gml</script>
+    </scripts>
     <scripts name="UI">
-      <script>scripts\scr_checkboxEffects.gml</script>
-      <script>scripts\scr_hpdisplay.gml</script>
       <script>scripts\scr_setGUI.gml</script>
+      <script>scripts\scr_fixColor.gml</script>
       <script>scripts\scr_drawSpriteText.gml</script>
       <script>scripts\scr_drawSpriteTextScale.gml</script>
-      <script>scripts\scr_fixColor.gml</script>
-      <script>scripts\scr_EndGame.gml</script>
-      <script>scripts\scr_EndGameDraw.gml</script>
       <script>scripts\scr_drawSpriteTextScaleLines.gml</script>
+      <script>scripts\scr_EndGameDraw.gml</script>
+      <script>scripts\scr_hpdisplay.gml</script>
     </scripts>
     <scripts name="save">
       <script>scripts\scr_save.gml</script>
@@ -96,6 +97,7 @@
     </scripts>
     <scripts name="buttonScripts">
       <script>scripts\scr_continueButtonClick.gml</script>
+      <script>scripts\scr_checkboxEffects.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -128,7 +130,6 @@
         <object>objects\obj_menu_end</object>
         <object>objects\obj_menu_options</object>
         <object>objects\obj_changeRoom</object>
-        <object>objects\obj_ingameButton</object>
         <object>objects\obj_menu_test</object>
         <object>objects\obj_spriteDrawButton</object>
       </objects>
