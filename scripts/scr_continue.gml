@@ -22,10 +22,24 @@ scr_pause(false);
 //set player hp to 1
 with (obj_player) hp = 1;
 
+
+
+
 //Clear inGame screen (destroy all enemys, enemy bullets and bullet on screen)
-with (obj_monster) instance_destroy();
-with (obj_bullet) instance_destroy();
+
+
+//Check every object if it is an enemy if it is an enemy destroy it
+with (all) 
+{
+    if (object_is_ancestor(object_index, obj_monster) || object_index == obj_monster)
+        instance_destroy();
+}
+//Destroy all Enemy bullets
 with (obj_bullet_evil) instance_destroy();
+//destroy all player bullets
+with (obj_bullet) instance_destroy();
+
+
 
 //Increment currentContinue inside obj_controll 
 with (obj_controll) currentContinue++;
