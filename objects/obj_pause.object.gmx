@@ -114,6 +114,7 @@ if paused {
     text = "Main Menu";
     targetRoom = rm_menu_main;
     image_yscale = 2;
+    font = fnt_large;
     }
 }
 //Delete Pause Menu when unpaused
