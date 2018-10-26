@@ -150,7 +150,8 @@ with (continueButton) {
     textColor = c_white;
     //Run scr_continueButtonClick on Click
     onClick = scr_continueButtonClick;
-    
+    //(continues the game if you click yes on the dialog)
+    onDialogYes = scr_continueButtonYes;
 }
 
 

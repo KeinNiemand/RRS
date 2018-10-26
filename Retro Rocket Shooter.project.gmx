@@ -69,6 +69,7 @@
       <script>scripts\scr_cleanPause.gml</script>
       <script>scripts\scr_playPowerupSound.gml</script>
       <script>scripts\scr_showQuestion.gml</script>
+      <script>scripts\scr_spendCoins.gml</script>
     </scripts>
     <scripts name="Utility">
       <script>scripts\scr_irandomRange.gml</script>
@@ -80,6 +81,7 @@
         <script>scripts\scr_playerLosseLives.gml</script>
       </scripts>
       <script>scripts\scr_EndGame.gml</script>
+      <script>scripts\scr_continue.gml</script>
     </scripts>
     <scripts name="UI">
       <script>scripts\scr_setGUI.gml</script>
@@ -96,8 +98,11 @@
       <script>scripts\scr_load.gml</script>
     </scripts>
     <scripts name="buttonScripts">
-      <script>scripts\scr_continueButtonClick.gml</script>
       <script>scripts\scr_checkboxEffects.gml</script>
+      <scripts name="continueButton">
+        <script>scripts\scr_continueButtonClick.gml</script>
+        <script>scripts\scr_continueButtonYes.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <fonts name="fonts">
