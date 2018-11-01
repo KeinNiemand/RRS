@@ -9,7 +9,7 @@
   </volume>
   <pan>0</pan>
   <bitRates>
-    <bitRate>256</bitRate>
+    <bitRate>320</bitRate>
   </bitRates>
   <sampleRates>
     <sampleRate>48000</sampleRate>
@@ -22,8 +22,8 @@
   </bitDepths>
   <preload>-1</preload>
   <data>snd_sfx_powerup.wav</data>
-  <compressed>0</compressed>
+  <compressed>1</compressed>
   <streamed>0</streamed>
-  <uncompressOnLoad>0</uncompressOnLoad>
+  <uncompressOnLoad>1</uncompressOnLoad>
   <audioGroup>0</audioGroup>
 </sound>

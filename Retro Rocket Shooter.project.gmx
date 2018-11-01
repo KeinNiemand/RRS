@@ -50,6 +50,7 @@
     <background>background\bg_dirt</background>
     <background>background\bg_grass</background>
     <background>background\bg_space</background>
+    <background>background\bg_space2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
