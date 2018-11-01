@@ -134,7 +134,6 @@
         <object>objects\obj_play_normal</object>
         <object>objects\obj_play_hard</object>
         <object>objects\obj_menu_end</object>
-        <object>objects\obj_menu_options</object>
         <object>objects\obj_changeRoom</object>
         <object>objects\obj_menu_test</object>
         <object>objects\obj_spriteDrawButton</object>

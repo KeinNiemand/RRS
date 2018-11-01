@@ -58,9 +58,9 @@ scr_windowSize();</code>
     <instance objName="obj_play_normal" x="90" y="96" name="inst_2A7BF072" locked="0" code="" scaleX="2.859375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_play_hard" x="90" y="144" name="inst_B4C8D6D6" locked="0" code="" scaleX="2.859375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_menu_end" x="90" y="272" name="inst_3BD611BD" locked="0" code="" scaleX="2.765625" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu_options" x="90" y="192" name="inst_28C26FE9" locked="0" code="" scaleX="2.859375" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_title" x="72" y="0" name="inst_10911F79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coinDisplay" x="126" y="0" name="inst_F2123949" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_changeRoom" x="90" y="208" name="inst_52AC8D02" locked="0" code="text = &quot;Options&quot;;&#xA;targetRoom = rm_options;&#xA;" scaleX="2.90625" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
