@@ -32,7 +32,7 @@ hp = 2;
 vspeed = 1;
 baseSpeed = 1;
 image_speed = 0;
-points = 1;
+points = 2;
 luck = random(100);
 //Set powerupProbabilty muliplier
 powerupProbability = 1;

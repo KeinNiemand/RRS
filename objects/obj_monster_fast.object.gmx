@@ -30,7 +30,7 @@ event_inherited();
 image_speed = 0;
 baseSpeed = 2;
 hp = 1;
-points = 2;
+points = 3;
 </string>
           </argument>
         </arguments>
