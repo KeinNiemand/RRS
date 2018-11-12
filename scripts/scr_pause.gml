@@ -7,8 +7,14 @@ if mode {
     spr_lastScreen = sprite_create_from_surface(application_surface, 0, 0, room_width, room_height, false, false, 0, 0);
     instance_deactivate_all(true); 
     instance_activate_object(obj_storage);
+    oldBackgroundHSpeed = background_hspeed;
+    oldBackgroundVspeed = background_vspeed;
+    background_hspeed[0] = 0;
+    background_vspeed[0] = 0;
 } //Unpause Game
 else {
     instance_activate_all();
     scr_cleanPause();
+    background_hspeed = oldBackgroundHSpeed;
+    background_vspeed = oldBackgroundVspeed;
 }
