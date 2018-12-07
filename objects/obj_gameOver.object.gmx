@@ -93,7 +93,7 @@ gameEnd = false;
             <string>///Calculate Stuff
 
 //Calculate continuePrice
-continuePrice = 4*sqr(currentContinue);
+continuePrice = 6+(4*sqr(currentContinue));
 </string>
           </argument>
         </arguments>
