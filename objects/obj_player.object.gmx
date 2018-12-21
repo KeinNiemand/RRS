@@ -28,17 +28,17 @@
             <string>image_speed = 0.2;
 hp = 6;
 //shoots per second
-sps = 5;
+sps = 3;
 //max shoots per second
-maxsps = 10;
+maxsps = 8;
 score = 0;
 tripleshot = false;
 attack = 1;
 attackmul = 1;
 spsmul = 1;
-//In Pixel per Frame (Pixels per second/FPS)
+//In Pixel per Frame = (Pixels per second/FPS)
 maxSpeed = 500/room_speed;
-//In Pixels per Frame² (Pixel per second²/FPS)
+//In Pixels per Frame² = (Pixel per second²/FPS)
 acceleration = 50/room_speed;
 killedBy = "";
 </string>
