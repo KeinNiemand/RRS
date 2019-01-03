@@ -103,7 +103,11 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_playerLosseLives(1, creatorObject);
+            <string>if (other.alarm[3] == -1) {
+    scr_playerLosseLives(1, creatorObject);
+    other.alarm[3] = other.hitInvincibilityT * room_speed;
+    other.image_alpha = 0.7;
+}
 instance_destroy();
 </string>
           </argument>
