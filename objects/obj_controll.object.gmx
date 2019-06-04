@@ -30,7 +30,7 @@ if (instance_number(obj_controll)&gt;1) instance_destroy();
 player = obj_player;
 paused = false;
 difficulty = 1;
-startSpawnPS = 0.42;
+startSpawnPS = 0.5;
 maxSpawnPS = 2;
 powerupProbability = 7;
 nextSpawn = 0;
