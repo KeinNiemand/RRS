@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.2;
+            <string>var animationFps = 25;
+image_speed = animationFps/room_speed;
 hp = 6;
 //shoots per second
 sps = 3;
