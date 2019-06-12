@@ -63,12 +63,7 @@ stop = center+scr_irandomRange(-100,100)
             <kind>1</kind>
             <string>///Moving Code
 event_inherited();
-if (x &lt;= 0 &amp;&amp; hspeed &lt;= 0) {
-    hspeed *= -1;
-}
-if (x &gt;= room_width &amp;&amp; hspeed &gt;= 0) {
-    hspeed *= -1;
-}
+scr_enemySimpleMovement();
 </string>
           </argument>
         </arguments>

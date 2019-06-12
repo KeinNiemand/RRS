@@ -81,6 +81,9 @@
         <script>scripts\scr_Death.gml</script>
         <script>scripts\scr_playerLosseLives.gml</script>
       </scripts>
+      <scripts name="Enemys">
+        <script>scripts\scr_enemySimpleMovement.gml</script>
+      </scripts>
       <script>scripts\scr_EndGame.gml</script>
       <script>scripts\scr_continue.gml</script>
     </scripts>

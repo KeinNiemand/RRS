@@ -52,13 +52,10 @@ points = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
-if (x &lt;= 0 &amp;&amp; hspeed &lt;= 0) {
-    hspeed *= -1;
-}
-if (x &gt;= room_width &amp;&amp; hspeed &gt;= 0) {
-    hspeed *= -1;
-}
+            <string>///Movement Code
+event_inherited();
+//move enemy
+scr_enemySimpleMovement();
 </string>
           </argument>
         </arguments>

@@ -132,7 +132,9 @@ scr_registerEnemys();
 //Calculte Unlocked Enemys
 max_enemy = min(floor((gameTime)/unlockRate),array_length_1d(enemys)-1);
 //Spawn Monsters
-var lastSpawn = instance_create(irandom(room_width), -32, enemys[irandom(max_enemy)]);
+var nextEnemyType = enemys[irandom(max_enemy)];
+var nextEnemyWidth = sprite_get_width(object_get_sprite(nextEnemyType));
+var lastSpawn = instance_create(irandom_range(nextEnemyWidth,room_width-nextEnemyWidth), -32, nextEnemyType);
 //Do Stuff in the last spawned monster
 with (lastSpawn) { 
     //Set Monster PowerUp Probability
