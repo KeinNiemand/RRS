@@ -93,7 +93,7 @@ gameEnd = false;
             <string>///Calculate Stuff
 
 //Calculate continuePrice
-continuePrice = 6+(4*sqr(currentContinue));
+continuePrice = 4+(4*sqr(currentContinue));
 </string>
           </argument>
         </arguments>
@@ -138,10 +138,15 @@ with (continueButton) {
     text = "continue: " + string(other.continuePrice) + "~";
     
     //Set Sprite Color to Green if you can afford to continue else set it to silver
-    if(other.continuePrice &lt;= obj_storage.coins)
+    if(other.continuePrice &lt;= obj_storage.coins) {
         spriteColor = c_green;
-    else
+        sound = snd_sfx_menu;
+    }
+    else {
         spriteColor = c_silver;
+        sound = snd_sfx_back;
+    }
+        
     //make font and sprite larger becouse button is ingame
     image_yscale = 2;
     font = fnt_large;
