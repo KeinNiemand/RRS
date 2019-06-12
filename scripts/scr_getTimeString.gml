@@ -9,7 +9,7 @@ var TotalSec = argument0;
 var minutes = max(0,floor(TotalSec/60));
 
 //Calculate secons
-var seconds = max(0,round(TotalSec-(minutes*60)));
+var seconds = max(0,floor(TotalSec-(minutes*60)));
 
 
 //Generate Minutes String
